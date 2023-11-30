@@ -6,17 +6,168 @@
     android:layout_height="match_parent"
     tools:context=".ui.pencarian.PencarianFragment">
 
-    <TextView
-        android:id="@+id/text_pencarian"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/roundep2"
+                        android:layout_height="match_parent">
+
+                        <SearchView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/search"
+                            android:layout_marginBottom="24dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="24dp"
+                            android:text="Cari Berdasarkan Kategori..."
+                            android:textSize="16dp"
+                            android:textStyle="italic"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/bgsearchkategori"
+                            android:src="@drawable/pecel"
+                            app:layout_constraintStart_toStartOf="@+id/textView9"
+                            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginStart="32dp"
+                            android:background="@drawable/bgsearchkategori"
+                            android:src="@drawable/nasi"
+                            app:layout_constraintStart_toEndOf="@+id/imageView6"
+                            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Ikan Air Tawar"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                            app:layout_constraintStart_toStartOf="@+id/imageView6"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/black"
+                            android:textStyle="normal"
+                            android:text="Makanan Berat"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+                            app:layout_constraintStart_toStartOf="@+id/imageView7"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/bgsearchkategori"
+                            android:src="@drawable/geprek"
+                            app:layout_constraintStart_toStartOf="@+id/textView9"
+                            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                        <ImageView
+                            android:id="@+id/imageView15"
+                            android:background="@drawable/bgsearchkategori"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/ikanbakar"
+                            app:layout_constraintStart_toEndOf="@+id/imageView10"
+                            app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Kreasi Ayamm goreng"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView10"
+                            app:layout_constraintStart_toStartOf="@+id/imageView10"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Ikan Laut"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView15"
+                            app:layout_constraintStart_toStartOf="@+id/imageView15"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

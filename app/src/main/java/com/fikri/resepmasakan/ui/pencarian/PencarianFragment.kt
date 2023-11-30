@@ -29,9 +29,9 @@ class PencarianFragment : Fragment() {
         _binding = FragmentPencarianBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textPencarian
+        //val textView: TextView = binding.textPencarian
         pencarianViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+          //  textView.text = it
         }
         return root
     }
