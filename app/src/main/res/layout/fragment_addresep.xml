@@ -6,17 +6,155 @@
     android:layout_height="match_parent"
     tools:context=".ui.resep.TambahResepFragment">
 
-    <TextView
-        android:id="@+id/text_dashboard"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/addresep"
+                        >
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="Ada Resep Apa hari ini ?"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:textStyle="italic|normal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/editTextText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="32dp"
+                            android:ems="18"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textStyle="italic"
+                            android:background="@drawable/inputresep"
+                            android:inputType="text"
+                            android:hint="Judul Masakan"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:textColor="@color/black"
+                            android:textStyle="italic"
+                            android:id="@+id/editTextTextMultiLine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:padding="10dp"
+                            android:layout_marginTop="32dp"
+                            android:ems="18"
+                            android:background="@drawable/inputresep"
+                            android:gravity="start|top"
+                            android:hint="Cerita Dibalik Masakan Ini "
+                            android:inputType="textMultiLine"
+                            app:layout_constraintEnd_toEndOf="@+id/editTextText"
+                            app:layout_constraintStart_toStartOf="@+id/editTextText"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+                        <EditText
+                            android:textColor="@color/black"
+                            android:textStyle="italic"
+                            android:id="@+id/editTextTextMultiLine1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="32dp"
+                            android:ems="18"
+                            android:padding="10dp"
+                            android:gravity="start|top"
+                            android:hint="Apa saja Bahan Bahanya ? "
+                            android:inputType="textMultiLine"
+                            android:background="@drawable/inputresep"
+                            app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine"
+                            app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+
+                        <EditText
+                            android:textColor="@color/black"
+                            android:textStyle="italic"
+                            android:id="@+id/editTextTextMultiLine2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="32dp"
+                            android:ems="18"
+                            android:padding="10dp"
+                            android:gravity="start|top"
+                            android:hint="Langkah Langkah Saat Masak? "
+                            android:inputType="textMultiLine"
+                            android:background="@drawable/inputresep"
+                            app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine1"
+                            app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine1"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine1" />
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="32dp"
+                            android:layout_marginBottom="100dp"
+                            android:onClick="Upload"
+                            android:text="Upload Image"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine2"
+                            app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine2"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2" />
+                        />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
