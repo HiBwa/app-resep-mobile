@@ -1,4 +1,4 @@
-package com.fikri.resepmasakan.ui.dashboard
+package com.fikri.resepmasakan.ui.resep
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

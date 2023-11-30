@@ -19,13 +19,13 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.fikri.resepmasakan.ui.dashboard.TambahResepFragment"
+        android:name="com.fikri.resepmasakan.ui.resep.TambahResepFragment"
         android:label="Tambah Resep"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_addresep" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.fikri.resepmasakan.ui.notifications.ProfilFragment"
+        android:name="com.fikri.resepmasakan.ui.profil.ProfilFragment"
         android:label="Profil"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_profil" />
 </navigation>

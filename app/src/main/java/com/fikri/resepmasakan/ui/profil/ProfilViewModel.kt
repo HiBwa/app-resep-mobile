@@ -1,4 +1,4 @@
-package com.fikri.resepmasakan.ui.notifications
+package com.fikri.resepmasakan.ui.profil
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
