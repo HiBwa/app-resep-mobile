@@ -72,9 +72,7 @@
                             android:id="@+id/textView20"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="32dp"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="32dp"
                             android:text="2"
                             android:textColor="@color/white"
                             android:textSize="18dp"
@@ -95,6 +93,16 @@
                             app:layout_constraintEnd_toEndOf="@+id/textView20"
                             app:layout_constraintStart_toStartOf="@+id/textView20"
                             app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="88dp"
+                            android:background="@color/header"
+                            android:src="@drawable/logout2"
+                            app:layout_constraintStart_toEndOf="@+id/textView20"
+                            app:layout_constraintTop_toTopOf="@+id/imageView" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
