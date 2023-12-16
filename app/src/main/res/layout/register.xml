@@ -56,9 +56,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
                             android:ems="16"
-                            android:textStyle="italic"
                             android:inputType="text"
-                            android:hint="nama"
+                            android:hint="Nama Lengkap"
                             app:layout_constraintEnd_toEndOf="@+id/textView12"
                             app:layout_constraintStart_toStartOf="@+id/textView12"
                             app:layout_constraintTop_toBottomOf="@+id/textView12" />
@@ -68,9 +67,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
                             android:ems="16"
-                            android:textStyle="italic"
                             android:inputType="text"
-                            android:hint="username"
+                            android:hint="Username"
                             app:layout_constraintEnd_toEndOf="@+id/nama"
                             app:layout_constraintStart_toStartOf="@+id/nama"
                             app:layout_constraintTop_toBottomOf="@+id/nama" />
@@ -83,7 +81,7 @@
                             android:ems="16"
                             android:textStyle="italic"
                             android:inputType="textEmailAddress"
-                            android:hint="email"
+                            android:hint="alamat@email"
                             app:layout_constraintEnd_toEndOf="@+id/username"
                             app:layout_constraintStart_toStartOf="@+id/username"
                             app:layout_constraintTop_toBottomOf="@+id/username" />
@@ -96,7 +94,7 @@
                             android:ems="16"
                             android:textStyle="italic"
                             android:inputType="number"
-                            android:hint="Nomot Telehphone"
+                            android:hint="Nomor HP"
                             app:layout_constraintEnd_toEndOf="@+id/email"
                             app:layout_constraintStart_toStartOf="@+id/email"
                             app:layout_constraintTop_toBottomOf="@+id/email" />
