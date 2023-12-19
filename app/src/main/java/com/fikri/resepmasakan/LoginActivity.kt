@@ -32,6 +32,7 @@ class LoginActivity :AppCompatActivity() {
             login()
         }
 
+
         register.setOnClickListener(View.OnClickListener {
             val register = Intent(this, RegisterActivity::class.java)
             startActivity(register)
@@ -67,7 +68,7 @@ class LoginActivity :AppCompatActivity() {
                         val intent = Intent(this@LoginActivity,MainActivity::class.java)
                         startActivity(intent)
                         finish()  // Menutup aktivitas saat ini agar pengguna tidak dapat kembali ke halaman pendaftaran
-                    }, 2000)
+                    }, 1000)
 
                 }else {
                     Toast.makeText(this@LoginActivity, respon.message, Toast.LENGTH_SHORT).show()
